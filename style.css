@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: 'Press Start 2P';
+}
+
+canvas{
+    border-inline: 20px solid black;
+}
+
+#collisionCount {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 900;
+    font-size: 25px;
+    color: #e94100;
+    pointer-events: none;
+}
+
+.right ,.left{
+    height: 600px;
+    width: 10%;
+    background-color: #fff;
+    position: relative;
+    border: 5px solid;
+}
+
+.right{
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    background-color: #fe584c;
+    padding-block: 60px;
+    padding-inline: 20px;
+}
+
+.left{
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    background-color: #01bbdc;
+}
+
+.wrapper{
+    position: absolute;
+    top: 59%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#reset {
+    position: absolute;
+    top: 75%;
+    left: 25%;
+    background: transparent;
+    border: none;
+}
+
+#gravity_up {
+    background: transparent;
+    border: none;
+    rotate: 90deg;
+}
+
+#gravity_down {
+    background: transparent;
+    border: none;
+    rotate: -90deg;
+}
+
