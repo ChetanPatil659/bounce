@@ -112,8 +112,13 @@ canvas.addEventListener("click", (event) => {
     const deltaY = mouseY - ball.y;
     const distance = Math.sqrt(deltaX * deltaX + deltaY * deltaY);
 
-    ball.dx = (deltaX / distance) * ball.speed;
-    ball.dy = (deltaY / distance) * ball.speed;
+    // ball.dx = (deltaX / distance) * ball.speed;
+    // ball.dy = (deltaY / distance) * ball.speed;
+
+    
+    ball.y = mouseY 
+    ball.x= mouseX
+    console.log(mouseX, mouseY);
 })
 
 function gameLoop() {
